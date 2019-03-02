@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    color: #777;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background-image: linear-gradient(to right bottom, #130746, #9683ee);
+    color: #fff;
+    height: 100vh;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    position: relative;
+}
+.serv-box{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#363232;
+    border-radius: 1.5rem;
+    width: 42%;
+    height: 56rem;
+    margin-top: 12rem;
+    overflow: hidden;
+}
+h1{
+    background-image: linear-gradient(to right bottom, #130746, #9683ee);
+    transition: transform .3s;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 4rem;
+    font-weight: 400;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    animation: moveDown 1s ease-out;
+}
+@keyframes moveDown{
+    0%{
+       opacity: 0; 
+        transform: translateY(-10rem);
+    }
+    80%{
+         transform: translateY(1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+form {
+    border-radius: 1.5rem;
+    padding: 2rem 5rem;
+    margin: 5rem auto;
+}
+ ul {
+    list-style: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+    margin: 2rem;
+}
+li.selected-list {
+   background-image: linear-gradient(to left bottom, #392983, #320fcb);
+}
+ ul li {
+    padding: 2rem 3rem;
+    background-image: linear-gradient(to right bottom, #130746, #9683ee);
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    
+}
+li span {
+    float: right;
+}
+
+.total {
+    border-top: 1px solid #fff;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+}
+div.total span {
+    float: right;
+}

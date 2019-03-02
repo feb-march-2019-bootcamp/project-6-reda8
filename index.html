@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100i,300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <section class="serv-section">
+        <div id="app">
+        <div class="serv-box">
+           <form id="serv-form">
+               <h1>Services</h1>
+               <ul>
+                   <li v-for="Data in listData" v-on:click="activeList(Data)"  v-bind:class="{'selected-list': Data.selectCourse}">{{Data.courseName}}
+                       <span >&#36;{{Data.price}}</span>
+                   </li>
+               </ul>
+               <div class="total"> Total: <span>&#36;{{total()}}</span></div>
+           </form>
+        </div>
+        <script src="app.js"></script>
+        </div>
+    </section>
+</body>
+</html>
